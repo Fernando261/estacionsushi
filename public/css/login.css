@@ -1,0 +1,135 @@
+/* Fondo animado estilo Estación Sushi */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: linear-gradient(-45deg, #000000, #1a1a1a, #2b2b2b, #000000);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Card del login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-card {
+    background: rgba(15, 15, 15, 0.95);
+    padding: 3rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.3);
+    width: 380px;
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Título y subtítulo */
+.login-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff2b2b; /* rojo sushi */
+    margin-bottom: 0.5rem;
+    text-shadow: 0px 0px 10px rgba(255, 43, 43, 0.6);
+}
+
+.login-subtitle {
+    color: #ddd;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+/* Inputs */
+.form-group {
+    text-align: left;
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    color: #f1f1f1;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #1e1e1e;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    background: #292929;
+    box-shadow: 0px 0px 8px rgba(255, 43, 43, 0.6);
+}
+
+/* Botón */
+.btn-login {
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(45deg, #ff2b2b, #d40000);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-login:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 43, 43, 0.8);
+}
+
+/* Links */
+.login-links {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-links a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.login-links a:hover {
+    color: #ff2b2b;
+}
+
+/* Alertas */
+.alert-error {
+    background: rgba(255, 0, 0, 0.15);
+    border: 1px solid #ff2b2b;
+    color: #ff6b6b;
+    padding: 0.8rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
